@@ -2,34 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First CSS Line</title>
-<STYLE>
-h1{
-
-    border-width: 1px;
-    border-style: dot-dash;
-    border-color: red;
-
-}
-
-
-</STYLE>
+    <title>Music Player </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1 >Rehan Tariq</h1>
-<h1 >Furqan Tariq</h1>
-<h1 style="color:green;background-color: blueviolet">Faizan Tariq</h1>
-<h1 style="color:rgb(204,51,0);background-color: aquamarine">Nouman Tariq</h1>
+<div class="container">
+<div class="music-player">
+<nav>
+    <div class="circle">
+        <i class="fa-solid fa-angle-left"></i>
+    </div>
+    <div class="circle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+<img src="468-thumbnail.png" class="song-img">
+    <h1>Tere Bin Song</h1>
+    <p>Shani Arshad</p>
+
+    <audio controls id="song">
+        <source src="WhatsApp Audio 2023-08-27 at 11.27.24 AM.mpeg" type="audio/mpeg">
+    </audio>
+    <input type="range" value="0" id="progress">
 
 
-<p style="color:rgb(255,255,51);background-color: honeydew">
-    Our paraphrasing tool online lets you paraphrase text in one go. You can use this free tool to paraphrase your sentences, paragraphs, articles, and even long blogs with advanced AI technology. It further provides several useful features that help you customize the rephrased text to fit your content needs.
-</p>
+    <div class="controls">
+<div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
 
-<p style="color: fuchsia;background-color: bisque">
-    Our paraphrasing tool online lets you paraphrase text in one go.<span style="background-color:lightblue;"> You can use this free tool to paraphrase your sentences,</span> paragraphs, articles, and even long blogs with advanced AI technology. It further provides several useful features that help you customize the rephrased text to fit your content needs.
-</p>
+    </div>
+</div>
+</div>
 
-<a href="https://www.facebook.com/furqan.tariq.75436531"target="-main">Go to Furqan profile</a>
+<script src="javascript.js"></script>
 </body>
 </html>
